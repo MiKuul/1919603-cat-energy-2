@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <title>Функциональное питание Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -40,10 +59,11 @@
           <h1 class="promo-section__head-title">Функциональное питание для котов Cat Energy</h1>
           <p class="promo-section__text">Занялся собой? Займись котом!</p>
           <a class="promo-section__link promo-section__link--standart"  href="#">Подобрать программу</a>
-          <figure class="promo-section__picture">
-            <img class="promo-section__picture-img" src="#" alt="Банка с питанием для котов Cat Energy" width="280" height="270">
-            <figcaption>Банка с питанием для котов Cat Energy</figcaption>
-          </figure>
+          <picture>
+            <source width="552" height="449" type="image/png" media="(min-width: 1440px)" srcset="images/index/can-desktop-index@1x.png 1x, images/index/can-desktop-index@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index/can-tablet-index@1x.png 1x, images/index/can-tablet-index@2x.png 2x">
+            <img class="promo-section__picture" src="images/index/can-mobile-index@1x.png" srcset="images/index/can-mobile-index@2x.png" alt="Банка с питанием для котов Cat Energy" width="280" height="270">
+          </picture>
         </div>
       </section>
       <section class="main__section catalog-guide-section">
@@ -107,14 +127,14 @@
         <div class="example-section slider">
           <div class="slider__slide slider__slide--before">
             <picture>
-              <source srcset="#" type="image/png">
-              <img class="slider__image" src="#" alt="Кот Борис до похудения." width="280" height="256">
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/slider-before-tablet@1x.png 1x, images/index/slider-before-tablet@2x.png 2x">
+              <img class="slider__image" src="images/index/slider-before-mobile@1x.png" srcset="images/index/slider-before-mobile@2x.png" alt="Кот Борис до похудения." width="280" height="256">
             </picture>
           </div>
           <div class="slider__slide slider__slide--after">
             <picture>
-              <source srcset="#" type="image/png">
-              <img class="slider__image" src="#" alt="Кот Борис после похудения." width="280" height="256">
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/slider-after-tablet@1x.png 1x, images/index/slider-after-tablet@2x.png 2x">
+              <img class="slider__image" src="images/index/slider-after-mobile@1x.png" srcset="images/index/slider-after-mobile@2x.png" alt="Кот Борис после похудения." width="280" height="256">
             </picture>
           </div>
           <button class="slider__button" type="button">
