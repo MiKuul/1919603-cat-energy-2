@@ -1,1 +1,16 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: $text-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
