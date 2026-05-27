@@ -1,0 +1,24 @@
+.card__title {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 1);
+}
+
+.card {
+  &--show-more .card__title {
+    color: rgba(17, 17, 17, 1);
+  }
+
+  &--show-more .card__text,
+  .card__list {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &--show-more .card__button {
+    color: rgba(68, 68, 68, 1);
+    background-color: rgba(242, 242, 242, 1);
+  }
+}

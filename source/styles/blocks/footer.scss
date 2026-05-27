@@ -1,0 +1,23 @@
+.footer {
+  &--second-color {
+    background-color: rgba(242, 242, 242, 1);
+  }
+}
+
+.footer__contacts-description {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+}
+
+.footer__contacts-address {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.footer__socials {
+  background-color: rgba(242, 242, 242, 1);
+}
