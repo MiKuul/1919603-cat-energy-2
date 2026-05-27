@@ -1,0 +1,25 @@
+.promo-section__head-title {
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.promo-section__text {
+  font-family: $title-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.promo-section__link {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(104, 183, 56, 1);
+}
+
+.promo-section__container {
+  background-color: rgba(104, 183, 56, 0.85);
+}
