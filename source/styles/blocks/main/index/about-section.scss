@@ -50,7 +50,6 @@
 }
 
 .about-section__list-item-icon {
-
   &--leaf {
     width: 30px;
     height: 30px;
@@ -61,7 +60,7 @@
   &--water {
     width: 26px;
     height: 28.5px;
-    margin: 16px 17px 15.5px 17px;
+    margin: 16px 17px 15.5px;
     background-image: url("../../icons/stack.svg#icon-water");
   }
 
@@ -75,7 +74,7 @@
   &--time {
     width: 26px;
     height: 31px;
-    margin: 15px 17px 14px 17px;
+    margin: 15px 17px 14px;
     background-image: url("../../icons/stack.svg#icon-time");
   }
 }
