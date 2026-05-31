@@ -17,16 +17,47 @@
     <header class="header">
       <a class="header__logo global-link" href="index.html">
         <span class="visually-hidden">Обновить главную страницу</span>
-        <img
-          class="header__logo-logo"
-          src="#"
-          alt="Логотип Cat Energy"
-          width="33"
-          height="38">
-        <p class="header__logo-text"><b>CAT</b> ENERGY</p>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="images/logo-desktop.svg"
+            width="70"
+            height="59"
+            type="image/svg+xml">
+          <source
+            media="(min-width: 768px)"
+            srcset="images/logo-tablet.svg"
+            width="60"
+            height="50"
+            type="image/svg+xml">
+          <img
+            src="images/logo-mobile.svg"
+            width="33"
+            height="38"
+            alt="Логотип Cat Energy.">
+        </picture>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="images/logo-text-desktop-header.svg"
+            width="118"
+            height="21"
+            type="image/svg+xml">
+          <source
+            media="(min-width: 768px)"
+            srcset="images/logo-text-tablet-header.svg"
+            width="101"
+            height="18"
+            type="image/svg+xml">
+          <img
+            src="images/logo-text-mobile-header.svg"
+            width="101"
+            height="18"
+            alt="Cat Energy">
+        </picture>
       </a>
       <nav class="header__navigation">
-        <button class="header__navigation-toggle" type="button">
+        <button class="visually-hidden header__navigation-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="header__navigation-list global-list">
@@ -293,6 +324,7 @@
             <button class="card__button global-button" type="button">Заказать</button>
           </li>
           <li class="catalog-section__list-item card card--show-more">
+            <span class="card__icon"></span>
             <h3 class="card__title">Показать еще 100500 товаров</h3>
             <p class="card__text">На самом деле вкусов гораздо больше!</p>
             <button class="card__button global-button" type="button">Показать все</button>
@@ -344,6 +376,7 @@
           </li>
         </ul>
         <div class="additional-section__promo">
+          <span class="additional-section__promo-icon"></span>
           <p class="additional-section__promo-text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </section>
@@ -381,7 +414,13 @@
       <div class="footer__socials">
         <a class="footer__socials-second-logo global-link"  href="index.html">
           <span class="visually-hidden">Обновить главную страницу</span>
-          <p class="footer__socials-logo-text"><b>CAT</b> ENERGY</p>
+          <picture>
+            <img
+              src="images/logo-text-footer.svg"
+              width="128"
+              height="24"
+              alt="Cat Energy">
+          </picture>
         </a>
         <ul class="footer__socials global-list">
           <li class="footer__socials-item">
@@ -401,7 +440,15 @@
           </li>
         </ul>
         <a class="footer__socials-htmlacademy-link global-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">ссылка на htmlacademy</span>
+          <p class="footer__socials-htmlacademy-link-text">HTML Academy</p>
+          <picture>
+            <img
+              class="footer__socials-htmlacademy-link-icon"
+              src="images/logo-html.svg"
+              width="27"
+              height="34"
+              alt="Cat Energy">
+          </picture>
         </a>
       </div>
     </footer>

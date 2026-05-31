@@ -4,3 +4,78 @@
   line-height: 40px;
   color: rgba(0, 0, 0, 1);
 }
+
+.about-section__list-item {
+  position: relative;
+}
+
+.about-section__list-item-number {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgba(242, 242, 242, 1);
+
+  &--first {
+    width: 106px;
+    height: 280px;
+    mask-image: url("../../icons/stack.svg#icon-one");
+  }
+
+  &--second {
+    width: 134px;
+    height: 280px;
+    mask-image: url("../../icons/stack.svg#icon-two");
+  }
+
+  &--third {
+    width: 134px;
+    height: 280px;
+    mask-image: url("../../icons/stack.svg#icon-three");
+  }
+
+  &--fourth {
+    width: 136px;
+    height: 280px;
+    mask-image: url("../../icons/stack.svg#icon-four");
+  }
+}
+
+.about-section__list-item-icon-wrapper {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(104, 183, 56, 1);
+}
+
+.about-section__list-item-icon {
+
+  &--leaf {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    background-image: url("../../icons/stack.svg#icon-leaf");
+  }
+
+  &--water {
+    width: 26px;
+    height: 28.5px;
+    margin: 16px 17px 15.5px 17px;
+    background-image: url("../../icons/stack.svg#icon-water");
+  }
+
+  &--eat {
+    width: 25px;
+    height: 30px;
+    margin: 15px 17.5px;
+    background-image: url("../../icons/stack.svg#icon-eat");
+  }
+
+  &--time {
+    width: 26px;
+    height: 31px;
+    margin: 15px 17px 14px 17px;
+    background-image: url("../../icons/stack.svg#icon-time");
+  }
+}
