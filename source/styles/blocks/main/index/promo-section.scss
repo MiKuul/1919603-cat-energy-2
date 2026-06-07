@@ -21,5 +21,10 @@
 }
 
 .promo-section__container {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85)),
+    url("../../images/index/index-background-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }

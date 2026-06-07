@@ -21,3 +21,32 @@
 .footer__socials {
   background-color: rgba(242, 242, 242, 1);
 }
+
+.footer__socials-link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: rgba(102, 102, 102, 1);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+
+  &--vkontakte {
+    mask-image: url("../../icons/stack.svg#icon-vkontakte");
+  }
+
+  &--youtube {
+    mask-image: url("../../icons/stack.svg#icon-ytube");
+  }
+
+  &--telegram {
+    mask-image: url("../../icons/stack.svg#icon-telegram");
+  }
+}
+
+.footer__socials-htmlacademy-link-text {
+  font-family: $text-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(68, 68, 68, 1);
+}

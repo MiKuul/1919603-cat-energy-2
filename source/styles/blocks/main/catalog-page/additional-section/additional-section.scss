@@ -6,7 +6,19 @@
 }
 
 .additional-section__promo {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85)),
+    url("../../images/catalog/catalog-background-image@2x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.additional-section__promo-icon {
+  display: block;
+  width: 80px;
+  height: 82.6px;
+  background-image: url("../../icons/stack.svg#icon-gift");
 }
 
 .additional-section__promo-text {
