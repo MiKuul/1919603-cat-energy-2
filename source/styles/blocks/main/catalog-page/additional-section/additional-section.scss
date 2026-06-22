@@ -1,17 +1,86 @@
+.additional-section {
+  position: relative;
+  box-sizing: border-box;
+  padding: 48px 20px 52px;
+  border-top: 2px solid $green;
+
+  @media (min-width: $tablet-width) {
+    padding: 96px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 110px 116px;
+  }
+}
+
 .additional-section__title {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  margin: 0;
+  padding-left: 20px;
+  width: 265px;
   font-family: $title-font;
   font-size: 24px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1);
+  color: $black;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+    left: 30px;
+    min-width: 300px;
+    padding: 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 110px;
+  }
+}
+
+.additional-section__list {
+  margin-bottom: 35px;
 }
 
 .additional-section__promo {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 290px;
+  padding: 59px 61px 43px 58px;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85)),
-    url("../../images/catalog/catalog-background-image@2x.png");
+    url("../../images/catalog/catalog-background-image-mobile@2x.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    height: 200px;
+    padding: 57px 125px 60px 77px;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog/catalog-background-image@2x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+    padding: 56px 42px 43px;
+    flex-direction: column;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog/catalog-background-image-mobile@2x.png");
+  }
 }
 
 .additional-section__promo-icon {
@@ -24,5 +93,15 @@
 .additional-section__promo-text {
   font-size: 16px;
   line-height: 20px;
-  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    max-width: 161px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

@@ -1,6 +1,28 @@
+.main {
+  flex-grow: 1;
+}
+
 .main__title {
+  width: 100%;
+  margin: 0 auto 0 0;
+  padding: 27px 0 41px 20px;
   font-family: $title-font;
   font-size: 36px;
   line-height: 36px;
-  color: rgba(0, 0, 0, 1);
+  color: $black;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 165px 30px;
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 165px 110px;
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
 }

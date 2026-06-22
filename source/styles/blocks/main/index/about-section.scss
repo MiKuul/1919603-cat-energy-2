@@ -1,12 +1,119 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 105px 47px 30px;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 106px 69px 110px;
+    border-bottom: none;
+  }
+}
+
 .about-section__title {
+  margin: 0 0 40px;
   font-family: $title-font;
   font-size: 36px;
   line-height: 40px;
-  color: rgba(0, 0, 0, 1);
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.about-section__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    gap: 0;
+  }
 }
 
 .about-section__list-item {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-width: 227px;
+    max-width: 249px;
+    padding: 40px 0 57px;
+    gap: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.about-section__list-item:nth-child(1) {
+  @media (min-width: $tablet-width) {
+    max-width: 227px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 97px;
+  }
+}
+
+.about-section__list-item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    max-width: 246px;
+    margin-right: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+  }
+}
+
+.about-section__list-item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    max-width: 247px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 77px;
+  }
+}
+
+.about-section__list-item:nth-child(4) {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 249px;
+  }
+}
+
+.about-section__list-item-text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .about-section__list-item-number {
@@ -15,30 +122,39 @@
   top: 0;
   right: 0;
   z-index: -1;
-  background-color: rgba(242, 242, 242, 1);
+  font-family: $title-font;
+  color: $white;
 
   &--first {
-    width: 106px;
-    height: 280px;
-    mask-image: url("../../icons/stack.svg#icon-one");
+    @media (min-width: $tablet-width) {
+      font-size: 280px;
+      line-height: 280px;
+      color: rgba(242, 242, 242, 1);
+    }
   }
 
   &--second {
-    width: 134px;
-    height: 280px;
-    mask-image: url("../../icons/stack.svg#icon-two");
+    @media (min-width: $tablet-width) {
+      font-size: 280px;
+      line-height: 280px;
+      color: rgba(242, 242, 242, 1);
+    }
   }
 
   &--third {
-    width: 134px;
-    height: 280px;
-    mask-image: url("../../icons/stack.svg#icon-three");
+    @media (min-width: $tablet-width) {
+      font-size: 280px;
+      line-height: 280px;
+      color: rgba(242, 242, 242, 1);
+    }
   }
 
   &--fourth {
-    width: 136px;
-    height: 280px;
-    mask-image: url("../../icons/stack.svg#icon-four");
+    @media (min-width: $tablet-width) {
+      font-size: 280px;
+      line-height: 280px;
+      color: rgba(242, 242, 242, 1);
+    }
   }
 }
 
@@ -46,15 +162,25 @@
   display: flex;
   width: 60px;
   height: 60px;
-  background-color: rgba(104, 183, 56, 1);
+  margin-right: 20px;
+  background-color: $green;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .about-section__list-item-icon {
   &--leaf {
     width: 30px;
-    height: 30px;
+    height: 32px;
     margin: 15px;
     background-image: url("../../icons/stack.svg#icon-leaf");
+
+    @media (min-width: $tablet-width) {
+      margin: 27px 28px 25px 27px;
+    }
   }
 
   &--water {
@@ -62,6 +188,10 @@
     height: 28.5px;
     margin: 16px 17px 15.5px;
     background-image: url("../../icons/stack.svg#icon-water");
+
+    @media (min-width: $tablet-width) {
+      margin: 26px 27px 25px;
+    }
   }
 
   &--eat {
@@ -69,6 +199,10 @@
     height: 30px;
     margin: 15px 17.5px;
     background-image: url("../../icons/stack.svg#icon-eat");
+
+    @media (min-width: $tablet-width) {
+      margin: 25px 27px 25px 28px;
+    }
   }
 
   &--time {
@@ -76,5 +210,9 @@
     height: 31px;
     margin: 15px 17px 14px;
     background-image: url("../../icons/stack.svg#icon-time");
+
+    @media (min-width: $tablet-width) {
+      margin: 24px 27px 25px;
+    }
   }
 }

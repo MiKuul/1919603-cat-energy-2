@@ -1,27 +1,95 @@
+.subscribe {
+  position: relative;
+  padding: 44px 20px 40px;
+  border-top: 2px solid $green;
+
+  @media (min-width: $tablet-width) {
+    padding: 82px 68px 80px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 92px 40px 104px;
+  }
+}
+
 .subscribe__title {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  padding: 0 40px 0 20px;
+  margin: 0;
   font-family: $title-font;
   font-size: 24px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1);
+  color: $black;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+    left: 30px;
+    min-width: 202px;
+    padding: 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 110px;
+  }
 }
 
 .subscribe__text {
+  margin: 0;
+  padding-bottom: 24px;
+  text-align: center;
   font-family: $title-font;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1);
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .subscribe__button {
+  width: 100%;
+  padding: 15px 0;
   font-size: 20px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    max-width: 256px;
+  }
 }
 
 .subscribe__input {
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 12px 13px;
+  width: 100%;
   font-family: $title-font;
   font-size: 20px;
+  border: 1px solid rgba(205, 205, 205, 1);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    min-width: 376px;
+    max-width: 496px;
+  }
 }
 
 .subscribe__input::placeholder {
-  color: rgba(68, 68, 68, 1);
+  color: $grey;
+  text-transform: uppercase;
 }

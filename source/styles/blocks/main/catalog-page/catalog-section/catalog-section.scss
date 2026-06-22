@@ -1,3 +1,17 @@
 .catalog-section {
-  padding: 0;
+  padding-bottom: 25px;
+}
+
+.catalog-section__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60;
+    padding: 0 30px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80;
+    padding: 0 110px 91px;
+  }
 }
