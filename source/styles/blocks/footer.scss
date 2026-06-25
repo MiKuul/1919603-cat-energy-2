@@ -1,97 +1,21 @@
 .footer {
-  flex-grow: 0;
-  flex-shrink: 0;
+  width: 100%;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.footer__container {
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1440px;
+  }
 
   &--second-color {
     background-color: rgba(242, 242, 242, 1);
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
-}
-
-.footer__contacts {
-  width: 100%;
-}
-
-.footer__contacts-box {
-  display: flex;
-  justify-content: space-between;
-  padding: 26px 20px;
-
-  &--catalog {
-    background-color: rgba(242, 242, 242, 1);
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 60px 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    box-sizing: border-box;
-    top: 95px;
-    left: 110px;
-    padding: 60px 78px 60px 80px;
-    width: 565;
-    background-color: $white;
-  }
-}
-
-.footer__contacts-description {
-  margin: 0;
-  min-width: 140px;
-  font-family: $title-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $black;
-
-  @media (min-width: $tablet-width) {
-    width: 163px;
-    font-size: 20px;
-    line-height: 26px;
-  }
-}
-
-.footer__contacts-address {
-  font-size: 14px;
-  line-height: 20px;
-  font-style: normal;
-
-  @media (min-width: $tablet-width) {
-    width: 163px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: end;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: start;
-  }
-}
-
-.footer__contacts-address-text:first-child {
-  @media (min-width: $tablet-width) {
-    display: block;
-    margin-bottom: 15px;
-  }
-}
-
-.footer__contacts-map {
-  min-width: 100%;
-  min-height: 362px;
-}
-
-.footer__contacts-map-map {
-  display: block;
-  min-width: 100%;
-  border: none;
-  overflow: hidden;
-
-  @media (min-width: $desktop-width) {
-    min-height: 400px;
   }
 }
 
@@ -100,7 +24,6 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background-color: rgba(242, 242, 242, 1);
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px;
@@ -186,6 +109,7 @@
   justify-content: space-between;
   width: 100%;
   padding-top: 20px;
+  max-width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 168px;

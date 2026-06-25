@@ -14,74 +14,80 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <div class="body-container">
-      <header class="header header--catalog">
-        <a class="header__logo global-link" href="index.html">
-          <span class="visually-hidden">Перейти на главную страницу</span>
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="images/logo-desktop.svg"
-              width="70"
-              height="59"
-              type="image/svg+xml">
-            <source
-              media="(min-width: 768px)"
-              srcset="images/logo-tablet.svg"
-              width="60"
-              height="50"
-              type="image/svg+xml">
-            <img
-              class="header__logo-logo-img"
-              src="images/logo-mobile.svg"
-              width="33"
-              height="38"
-              alt="Логотип Cat Energy.">
-          </picture>
-        </a>
-        <a class="header__logo global-link" href="index.html">
-          <span class="visually-hidden">Перейти на главную страницу</span>
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="images/logo-text-desktop-header.svg"
-              width="118"
-              height="21"
-              type="image/svg+xml">
-            <source
-              media="(min-width: 768px)"
-              srcset="images/logo-text-tablet-header.svg"
-              width="101"
-              height="18"
-              type="image/svg+xml">
-            <img
-              class="header__logo-logo-text"
-              src="images/logo-text-mobile-header.svg"
-              width="101"
-              height="18"
-              alt="Cat Energy">
-          </picture>
-        </a>
-        <nav class="header__navigation">
-          <button class="header__navigation-toggle" type="button">
+    <header class="header header--catalog">
+      <div class="header__container inner-container">
+        <div class="header__top-row-container">
+          <a class="header__logo global-link" href="index.html">
+            <span class="visually-hidden">Обновить главную страницу</span>
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="images/logo-desktop.svg"
+                width="70"
+                height="59"
+                type="image/svg+xml">
+              <source
+                media="(min-width: 768px)"
+                srcset="images/logo-tablet.svg"
+                width="60"
+                height="50"
+                type="image/svg+xml">
+              <img
+                class="header__logo-logo-img"
+                src="images/logo-mobile.svg"
+                width="33"
+                height="38"
+                alt="Логотип Cat Energy.">
+            </picture>
+          </a>
+          <a class="header__logo global-link" href="index.html">
+            <span class="visually-hidden">Обновить главную страницу</span>
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="images/logo-text-desktop-header.svg"
+                width="118"
+                height="21"
+                type="image/svg+xml">
+              <source
+                media="(min-width: 768px)"
+                srcset="images/logo-text-tablet-header.svg"
+                width="101"
+                height="18"
+                type="image/svg+xml">
+              <img
+                class="header__logo-logo-text"
+                src="images/logo-text-mobile-header.svg"
+                width="101"
+                height="18"
+                alt="Cat Energy">
+            </picture>
+          </a>
+          <button class="header__menu-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
+        </div>
+        <nav class="header__navigation">
           <ul class="header__navigation-list global-list">
             <li class="header__navigation-item">
-              <a class="header__navigation-link header__navigation-link--catalog-link global-link"  href="index.html">Главная</a>
+              <a class="header__navigation-link header__navigation-link--active header__navigation-link--catalog-link global-link"  href="index.html">Главная</a>
             </li>
             <li class="header__navigation-item">
-              <a class="header__navigation-link header__navigation-link--active header__navigation-link--catalog-link global-link"  href="catalog.html">Каталог продукции</a>
+              <a class="header__navigation-link header__navigation-link--catalog-link global-link"  href="catalog.html">Каталог продукции</a>
             </li>
             <li class="header__navigation-item">
-              <a class="header__navigation-link header__navigation-link--catalog-link global-link"  href="programms.html">Подбор программы</a>
+              <a class="header__navigation-link  header__navigation-link--catalog-link global-link"  href="programms.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
-      </header>
-      <main class="main">
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__title-wrapper">
         <h1 class="main__title">Каталог продукции</h1>
-        <section class="main__catalog catalog-section">
+      </div>
+      <section class="main__catalog catalog-section">
+        <div class="catalog-section__container inner-container">
           <h2 class="visually-hidden">Каталог</h2>
           <ul class="catalog-section__list global-list">
             <li class="catalog-section__list-item card">
@@ -382,8 +388,10 @@
               <button class="card__button global-button" type="button">Показать все</button>
             </li>
           </ul>
-        </section>
-        <section class="main__additional additional-section">
+        </div>
+      </section>
+      <section class="main__additional additional-section">
+        <div class="additional-section__container inner-container">
           <h2 class="additional-section__title">Дополнительные товары</h2>
           <ul class="additional-section__list global-list">
             <li class="additional-section__list-item add-product">
@@ -431,8 +439,10 @@
             <span class="additional-section__promo-icon"></span>
             <p class="additional-section__promo-text">Закажите все и получите чехол для кота в подарок!</p>
           </div>
-        </section>
-        <section class="main__subscribe subscribe">
+        </div>
+      </section>
+      <section class="main__subscribe subscribe">
+        <div class="subscribe__container inner-container">
           <div class="subscribe__wrapper">
             <h2 class="subscribe__title">Акции и новинки</h2>
             <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
@@ -442,31 +452,36 @@
             <input class="subscribe__input" type="email" name="user-email" id="subscribe-email" placeholder="кuklachev@gmail.com" required>
             <button class="subscribe__button global-button" type="submit">Подписаться</button>
           </form>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__contacts">
-          <div class="footer__contacts-wrapper">
-            <div class="footer__contacts-box footer__contacts-box--catalog">
-              <p class="footer__contacts-description">Приглашаем<br> к сотрудничеству дилеров!</p>
-              <address class="footer__contacts-address">
-                <span class="footer__contacts-address-text">ул. Большая Конюшенная, д. 19/8</span>
-                <span class="footer__contacts-address-text">Санкт-Петербург</span>
+        </div>
+      </section>
+      <section class="main__seciton contacts">
+        <div class="contacts__container contacts__container--catalog inner-container">
+          <h2 class="contacts__title visually-hidden">Контакты</h2>
+          <div class="contacts__wrapper">
+            <div class="contacts__box contacts__box--catalog">
+              <p class="contacts__description">Приглашаем<br> к сотрудничеству дилеров!</p>
+              <address class="contacts__address">
+                <span class="contacts__address-text">ул. Большая Конюшенная, д. 19/8</span>
+                <span class="contacts__address-text">Санкт-Петербург</span>
               </address>
             </div>
           </div>
-          <div class="footer__contacts-map">
-              <iframe
-                class="footer__contacts-map-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.320472477304122!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f40.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705611894584!5m2!1sru!2sru"
-                width="320"
-                height="362"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
+          <div class="contacts__map">
+            <iframe
+              class="contacts__map-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.320472477304122!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f40.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705611894584!5m2!1sru!2sru"
+              width="320"
+              height="362"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container inner-container">
         <div class="footer__socials">
           <a class="footer__socials-second-logo global-link"  href="index.html">
             <span class="visually-hidden">Обновить главную страницу</span>
@@ -508,7 +523,7 @@
             </picture>
           </a>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

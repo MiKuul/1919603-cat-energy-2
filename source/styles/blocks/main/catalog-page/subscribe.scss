@@ -1,14 +1,23 @@
 .subscribe {
+  width: 100%;
+  border-top: 2px solid $green;
+}
+
+.subscribe__container {
+  box-sizing: border-box;
   position: relative;
   padding: 44px 20px 40px;
-  border-top: 2px solid $green;
 
   @media (min-width: $tablet-width) {
-    padding: 82px 68px 80px;
+    padding: 82px 68px 0;
+    margin-bottom: 80px;
+    max-width: 768px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 92px 40px 104px;
+  @media (min-width: $desktop-width) {
+    padding: 92px 40px 0;
+    margin-bottom: 104px;
+    max-width: 1440px;
   }
 }
 

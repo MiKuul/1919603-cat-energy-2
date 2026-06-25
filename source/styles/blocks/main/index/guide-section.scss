@@ -1,16 +1,24 @@
 .guide-section {
+  width: 100%;
+}
+
+.guide-section__container {
+  box-sizing: border-box;
+  padding: 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 45px;
+    max-width: 768px;
+  }
+
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    max-width: 1440px;
     padding: 82px 110px 71px;
   }
 }
 
 .guide-section__list {
-  margin: 0 20px 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 30px 45px;
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +44,12 @@
     box-sizing: border-box;
     width: 570px;
     padding: 47px 61px 55px 52px;
+    margin-bottom: 0;
   }
+}
+
+.guide-section__item:last-of-type {
+  margin-bottom: 0;
 }
 
 .guide-section__item-wrapper {

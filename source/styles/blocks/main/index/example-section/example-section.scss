@@ -1,11 +1,39 @@
 .example-section {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      linear-gradient(
+        to top,
+        rgba(234, 234, 234, 1) 462px,
+        $white 462px
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient(
+        to top,
+        rgba(242, 242, 242, 1) 462px,
+        $white 462px
+      );
+  }
+}
+
+.example-section__container {
   padding: 25px 20px 40px;
   background-color: rgba(234, 234, 234, 1);
 
   @media (min-width: $tablet-width) {
     position: relative;
     background-color: $white;
-    padding: 0;
+    padding: 45px 0 0;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    max-width: 1440px;
   }
 }
 

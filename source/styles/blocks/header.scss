@@ -1,7 +1,45 @@
 .header {
-  flex-grow: 0;
-  flex-shrink: 0;
-  position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+
+  &--catalog {
+    margin-bottom: 27px;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 74px;
+    }
+  }
+}
+
+.header__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px 34px 0 30px;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
+    max-width: 1440px;
+  }
+}
+
+.header__top-row-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,26 +47,7 @@
   padding: 13px 20px 15px;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-start;
-    gap: 13px;
-    padding: 25px 34px 65px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 14px;
-    padding: 55px 110px 29px;
-  }
-
-  &--catalog {
-    border-bottom: 1px solid rgba(230, 230, 230, 1);
-
-    @media (min-width: $tablet-width) {
-      border: none;
-    }
-
-    @media (min-width: $tablet-width) {
-      padding-bottom: 74px;
-    }
+    padding: 0;
   }
 }
 
@@ -84,7 +103,7 @@
   }
 }
 
-.header__navigation-toggle {
+.header__menu-toggle {
   width: 24px;
   height: 24px;
   mask-image: url("../../icons/stack.svg#menu-logo");
@@ -114,12 +133,6 @@
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top: 100%;
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
     background-color: $white;
   }
 
@@ -150,5 +163,15 @@
   @media (min-width: $tablet-width) {
     border-top: none;
     padding: 0;
+  }
+}
+
+.header__logo-logo-img {
+  @media (max-width: $mobile-width-only) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 14px;
   }
 }

@@ -5,9 +5,7 @@
 @import "./common/global.scss";
 
 /* BLOCKS */
-@import "./blocks/helper.scss";
 @import "./blocks/header.scss";
-// @import "./blocks/hero.scss";
 @import "./blocks/main/main.scss";
 @import "./blocks/main/index/promo-section.scss";
 @import "./blocks/main/index/guide-section.scss";
@@ -20,4 +18,5 @@
 @import "./blocks/main/catalog-page/additional-section/add-product.scss";
 @import "./blocks/main/catalog-page/additional-section/additional-section.scss";
 @import "./blocks/main/catalog-page/subscribe.scss";
+@import "./blocks/main/contacts.scss";
 @import "./blocks/footer.scss";

@@ -1,9 +1,11 @@
 .slider {
   position: relative;
-  width: 100%;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    position: relative;
+    width: 100%;
     height: 462px;
     padding-top: 250px;
   }
@@ -22,20 +24,19 @@
     height: 462px;
     background-color: rgba(234, 234, 234, 1);
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(242, 242, 242, 1);
+  }
 }
 
 .slider__slide {
+  position: absolute;
+  top: 0;
   z-index: 1;
 
-  &--after {
-    @media (max-width: $mobile-width-only) {
-      position: absolute;
-      top: 0;
-    }
-  }
-
   @media (min-width: $tablet-width) {
-    position: absolute;
+    top: auto;
     bottom: 101px;
     left: 104px;
   }

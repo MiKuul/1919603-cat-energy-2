@@ -12,6 +12,10 @@
     padding: 0;
     background-color: rgba(234, 234, 234, 1);
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(242, 242, 242, 1);
+  }
 }
 
 .result__wrapper {
@@ -82,12 +86,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 34px;
+  margin: 0 auto 34px;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
     gap: 43px;
     margin-right: 167px;
     margin-bottom: 0;
+    max-width: 367px;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,6 +128,10 @@
     font-size: 30px;
     line-height: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(242, 242, 242, 1);
+  }
 }
 
 .result__list-description {
@@ -148,7 +158,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: rgba(234, 234, 234, 1);
+    background-color: rgba(242, 242, 242, 1);
   }
 }
 
