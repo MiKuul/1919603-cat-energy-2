@@ -1,25 +1,76 @@
 .footer {
+  width: 100%;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.footer__container {
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1440px;
+  }
+
   &--second-color {
     background-color: rgba(242, 242, 242, 1);
   }
 }
 
-.footer__contacts-description {
-  font-family: $title-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 1);
-}
-
-.footer__contacts-address {
-  font-size: 14px;
-  line-height: 20px;
-  font-style: normal;
-}
-
 .footer__socials {
-  background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
+}
+
+.footer__socials-second-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
+
+  @media (min-width: $tablet-width) {
+    max-width: 130px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+.footer__socials-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
 .footer__socials-link {
@@ -44,9 +95,35 @@
   }
 }
 
+.footer__socials-item:first-child {
+  margin-right: -20px;
+}
+
+.footer__socials-item:last-child {
+  margin-left: -20px;
+}
+
+.footer__socials-htmlacademy-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    justify-content: space-between;
+    gap: 23px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .footer__socials-htmlacademy-link-text {
+  margin: 0;
   font-family: $text-font;
   font-size: 16px;
   line-height: 20px;
-  color: rgba(68, 68, 68, 1);
+  color: $grey;
 }
