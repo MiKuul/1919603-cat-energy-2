@@ -1,0 +1,118 @@
+.slider {
+  position: relative;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+  overflow: hidden;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    bottom: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 85px;
+    margin-left: auto;
+    margin-right: 110px;
+  }
+}
+
+.slider__slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-left {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  z-index: 1;
+}
+
+.img-right {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  z-index: 2; /* Положим поверх, чтобы управлять границей через один слой */
+}
+
+.slider__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+  margin: 0;
+}
+
+.slider:has(.slider__input:hover) .slider__line::after {
+  border-color: rgba(104, 183, 56, 1);
+}
+
+.slider:has(.slider__input:hover) .slider__line::before {
+  background-color: rgba(104, 183, 56, 1);
+}
+
+.slider:has(.slider__input:hover) .slider__line {
+  background-color: rgba(104, 183, 56, 1);
+}
+
+.slider:has(.slider__input:active) .slider__line::after {
+  border-color: rgba(104, 183, 56, 1);
+  opacity: 0.6;
+}
+
+.slider:has(.slider__input:active) .slider__line {
+  background-color: rgba(104, 183, 56, 1);
+  opacity: 0.6;
+}
+
+.slider__line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: rgba(102, 102, 102, 1);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.slider__line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid rgba(102, 102, 102, 1);
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
+}
+
+.slider__line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  background-color: rgba(102, 102, 102, 1);
+  mask-image: url("../../icons/stack.svg#icon-slider");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  z-index: 2;
+}

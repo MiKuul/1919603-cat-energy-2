@@ -1,0 +1,36 @@
+.main__title-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto 40px 0;
+  padding: 0 40px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 0 0 0 30px;
+    margin: 0 auto 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 0 0 0 110px;
+    margin: 0 auto 84px;
+  }
+}
+
+.main__title {
+  margin: 0;
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 36px;
+  white-space: nowrap;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

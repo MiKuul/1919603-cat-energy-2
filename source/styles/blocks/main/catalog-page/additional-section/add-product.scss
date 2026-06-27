@@ -1,0 +1,122 @@
+.add-product {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0 18px;
+  border-bottom: 1px solid rgba(205, 205, 205, 1);
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    padding: 26px 37px 28px;
+    border-left: 1px solid rgba(205, 205, 205, 1);
+    border-right: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 896px;
+    padding: 15px 0 16px;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.add-product:first-child {
+  border-top: 1px solid rgba(205, 205, 205, 1);
+}
+
+.add-product__title {
+  margin: 0;
+  padding-bottom: 13px;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 1);
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0 0 4px;
+    min-width: 320px;
+  }
+}
+
+.add-product__list {
+  padding-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.add-product__list-wrapper {
+  display: flex;
+  justify-content: flex-start;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.add-product__list-term {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    margin-right: 51px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
+    margin-right: auto;
+    white-space: nowrap;
+  }
+}
+
+.add-product__list-data {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+    margin-right: 2px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    margin-right: 43px;
+    white-space: nowrap;
+  }
+}
+
+.add-product-button {
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 100%;
+    margin-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 244px;
+    margin-top: 0;
+  }
+}
