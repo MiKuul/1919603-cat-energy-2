@@ -26,12 +26,8 @@
   justify-content: space-between;
   padding: 26px 20px;
 
-  &--catalog {
-    background-color: rgba(242, 242, 242, 1);
-  }
-
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 62px 70px 58px;
     max-width: 768px;
     margin: 0 auto;
   }
@@ -41,9 +37,21 @@
     box-sizing: border-box;
     top: 95px;
     left: 110px;
-    padding: 60px 78px 60px 80px;
+    padding: 60px 73px 60px 80px;
     width: 565;
     background-color: $white;
+  }
+
+  &--catalog {
+    background-color: rgba(242, 242, 242, 1);
+
+    @media (min-width: $tablet-width) {
+      padding: 60px 70px 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 60px 72px 58px 80px;
+    }
   }
 }
 
@@ -83,7 +91,7 @@
 .contacts__address-text:first-child {
   @media (min-width: $tablet-width) {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 
@@ -98,7 +106,7 @@
   border: none;
   overflow: hidden;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     min-height: 400px;
   }
 }

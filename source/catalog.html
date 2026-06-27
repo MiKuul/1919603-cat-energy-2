@@ -56,24 +56,24 @@
                 height="18"
                 type="image/svg+xml">
               <img
-                class="header__logo-logo-text"
-                src="images/logo-text-mobile-header.svg"
+                class="header__logo-logo-text header__logo-logo-text--catalog"
+                src="images/catalog/logo-catalog-mobile.svg"
                 width="101"
-                height="18"
+                height="20"
                 alt="Cat Energy">
             </picture>
           </a>
-          <button class="header__menu-toggle" type="button">
+          <button class="header__menu-toggle header__menu-toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="header__navigation">
+        <nav class="header__navigation header__navigation--closed header__navigation--nojs">
           <ul class="header__navigation-list global-list">
             <li class="header__navigation-item">
-              <a class="header__navigation-link header__navigation-link--active header__navigation-link--catalog-link global-link"  href="index.html">Главная</a>
+              <a class="header__navigation-link header__navigation-link--catalog-link global-link"  href="index.html">Главная</a>
             </li>
             <li class="header__navigation-item">
-              <a class="header__navigation-link header__navigation-link--catalog-link global-link"  href="catalog.html">Каталог продукции</a>
+              <a class="header__navigation-link header__navigation-link--active header__navigation-link--catalog-link global-link"  href="catalog.html">Каталог продукции</a>
             </li>
             <li class="header__navigation-item">
               <a class="header__navigation-link  header__navigation-link--catalog-link global-link"  href="programms.html">Подбор программы</a>
@@ -190,7 +190,7 @@
                       srcset="images/catalog/can-green500-mobile-catalog@2x.png"
                       alt="Еда Cat Energy PRO 500 г с рыбой"
                       width="68"
-                      height="86">
+                      height="78">
                   </picture>
                 </div>
                 <div class="card__text-wrapper">
@@ -274,7 +274,7 @@
                       srcset="images/catalog/can-blue500-mobile-catalog@2x.png"
                       alt="Еда Cat Energy PRO 500 г с гречкой"
                       width="68"
-                      height="86">
+                      height="78">
                   </picture>
                 </div>
                 <div class="card__text-wrapper">
@@ -358,7 +358,7 @@
                       srcset="images/catalog/can-violet500-mobile-catalog@2x.png"
                       alt="Еда Cat Energy PRO 1000 г с рисом"
                       width="68"
-                      height="86">
+                      height="84">
                   </picture>
                 </div>
                 <div class="card__text-wrapper">
@@ -437,7 +437,7 @@
           </ul>
           <div class="additional-section__promo">
             <span class="additional-section__promo-icon"></span>
-            <p class="additional-section__promo-text">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="additional-section__promo-text">Закажите все <span>и получите чехол для кота в подарок!</span></p>
           </div>
         </div>
       </section>
@@ -469,12 +469,13 @@
           <div class="contacts__map">
             <iframe
               class="contacts__map-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.320472477304122!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f40.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705611894584!5m2!1sru!2sru"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428382363!2d30.32050301328321!3d59.938796861982276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sgr!4v1782477172951!5m2!1sru!2sgr"
               width="320"
               height="362"
               allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
             </iframe>
           </div>
         </div>
@@ -513,14 +514,7 @@
           </ul>
           <a class="footer__socials-htmlacademy-link global-link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="footer__socials-htmlacademy-link-text">HTML Academy</p>
-            <picture>
-              <img
-                class="footer__socials-htmlacademy-link-icon"
-                src="images/logo-html.svg"
-                width="27"
-                height="34"
-                alt="Cat Energy">
-            </picture>
+            <span class="footer__socials-htmlacademy-link-icon"></span>
           </a>
         </div>
       </div>

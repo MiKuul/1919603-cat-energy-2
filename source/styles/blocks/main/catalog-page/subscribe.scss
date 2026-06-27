@@ -44,13 +44,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 110px;
+    top: -20px;
+    left: 70px;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
 .subscribe__text {
   margin: 0;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   text-align: center;
   font-family: $title-font;
   font-size: 16px;
@@ -60,6 +63,12 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 22px;
   }
 }
 
@@ -85,16 +94,28 @@
 .subscribe__input {
   box-sizing: border-box;
   margin-bottom: 16px;
-  padding: 12px 13px;
+  padding: 12px 11px;
   width: 100%;
   font-family: $title-font;
   font-size: 20px;
-  border: 1px solid rgba(205, 205, 205, 1);
+  border: 2px solid rgba(231, 231, 231, 1);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     min-width: 376px;
     max-width: 496px;
+  }
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    border-color: rgba(68, 68, 68, 1);
+  }
+
+  &:user-invalid {
+    border-color: rgba(255, 130, 130, 1);
   }
 }
 

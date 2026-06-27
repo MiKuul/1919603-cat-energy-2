@@ -43,11 +43,12 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 81px;
+    margin-left: 81px;
   }
 }
 
 .promo-section__picture {
-  margin: 0 20px;
+  margin: 0 20px 3px;
 
   @media (min-width: $tablet-width) {
     margin: 0 29px 0 30px;
@@ -76,6 +77,11 @@
     line-height: 20px;
     color: $black;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
+    margin-bottom: 51px;
+  }
 }
 
 .promo-section__link {
@@ -97,15 +103,24 @@
     top: 229px;
     left: 120px;
     width: 242px;
-    padding: 7px 0;
+    padding: 14px 0;
     font-size: 20px;
     line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
-    margin: 0 auto 0 90px;
-    padding: 14px 26px;
+    margin: 0 auto 0 81px;
+    padding: 14px 0;
+  }
+
+  &:hover {
+    background-color: rgba(94, 170, 47, 1);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(94, 170, 47, 1);
   }
 }
 
