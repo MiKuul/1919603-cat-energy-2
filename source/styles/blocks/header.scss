@@ -73,6 +73,22 @@
   @media (min-width: $desktop-width) {
     max-height: 59px;
   }
+
+  &:hover {
+    opacity: 80%;
+
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 60%;
+
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
+  }
 }
 
 .header__navigation {
@@ -241,23 +257,5 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 14px;
-  }
-}
-
-.header__logo {
-  &:hover {
-    opacity: 80%;
-
-    @media (min-width: $tablet-width) {
-      opacity: 1;
-    }
-  }
-
-  &:active {
-    opacity: 60%;
-
-    @media (min-width: $tablet-width) {
-      opacity: 1;
-    }
   }
 }

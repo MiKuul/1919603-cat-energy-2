@@ -1,7 +1,7 @@
-const range = document.getElementById('sliderRange');
-const leftImg = document.getElementById('leftImg');
-const rightImg = document.getElementById('rightImg');
-const sliderLine = document.getElementById('sliderLine');
+const range = document.getElementById('slider-range');
+const leftImg = document.getElementById('left-img');
+const rightImg = document.getElementById('right-img');
+const sliderLine = document.getElementById('slider-line');
 
 function updateSlider(value) {
   const val = Number(value);
