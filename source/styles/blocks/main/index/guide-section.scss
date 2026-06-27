@@ -29,15 +29,18 @@
 }
 
 .guide-section__item {
+  box-sizing: border-box;
   position: relative;
   max-width: 100%;
+  min-height: 266px;
   margin-bottom: 20px;
-  padding: 21px 20px 18px;
+  padding: 24px 20px 18px;
   background-color: rgba(242, 242, 242, 1);
 
   @media (min-width: $tablet-width) {
     padding: 77px 63px 53px 52px;
     margin-bottom: 30px;
+    min-height: 372px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +57,11 @@
 
 .guide-section__item-wrapper {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 39px;
@@ -81,7 +88,7 @@
 .guide-section__item-text {
   max-width: 100%;
   margin: 0 0 15px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid rgba(217, 217, 217, 1);
 
   @media (min-width: $tablet-width) {
@@ -102,6 +109,7 @@
 .guide-section__item-link {
   display: flex;
   align-items: center;
+  padding-top: 3px;
   font-family: $title-font;
   font-size: 16px;
   line-height: 16px;
@@ -112,6 +120,18 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: none;
+  }
+
+  &:hover .guide-section__item-link-icon {
+    mask-image: url("../../icons/stack.svg#cat-arrow");
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active .guide-section__item-link-icon {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -200,4 +220,8 @@
   mask-position: center;
   mask-size: cover;
   background-color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }
