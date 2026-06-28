@@ -80,7 +80,7 @@
     }
   }
 
-  &--show-more .card__button {
+  &--show-more .card__link {
     color: rgba(68, 68, 68, 1);
     background-color: rgba(242, 242, 242, 1);
 
@@ -125,7 +125,7 @@
   }
 }
 
-.card__img-wrapper {
+.card__img-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +147,7 @@
 
 .card__title {
   margin: 0;
-  padding: 0 64px 14px 0;
+  padding: 1px 64px 14px 0;
   font-family: $title-font;
   font-size: 16px;
   line-height: 20px;
@@ -216,7 +216,8 @@
   }
 }
 
-.card__button {
+.card__link {
   width: 100%;
   padding: 10px 0;
+  text-align: center;
 }

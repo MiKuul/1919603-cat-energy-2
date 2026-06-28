@@ -10,10 +10,11 @@
   }
 
   &--catalog {
-    margin-bottom: 65px;
+    margin-bottom: 26px;
     border-bottom: 1px solid rgba(230, 230, 230, 1);
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
       border: none;
     }
 
@@ -237,7 +238,7 @@
   }
 }
 
-.header__logo-logo-text {
+.header__logo-text {
   @media (max-width: $mobile-width-only) {
     margin-right: 8px;
     margin-top: 3px;
@@ -250,7 +251,7 @@
   }
 }
 
-.header__logo-logo-img {
+.header__logo-img {
   @media (min-width: $tablet-width) {
     margin-right: 13px;
   }

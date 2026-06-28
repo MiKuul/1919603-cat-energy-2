@@ -34,7 +34,7 @@
                 height="50"
                 type="image/svg+xml">
               <img
-                class="header__logo-logo-img"
+                class="header__logo-img"
                 src="images/logo-mobile.svg"
                 width="33"
                 height="38"
@@ -57,7 +57,7 @@
                 height="18"
                 type="image/svg+xml">
               <img
-                class="header__logo-logo-text"
+                class="header__logo-text"
                 src="images/logo-text-mobile-header.svg"
                 width="101"
                 height="18"
@@ -110,7 +110,7 @@
               width="280"
               height="270">
           </picture>
-          <a class="promo-section__link promo-section__link--standart global-link"  href="#">Подобрать программу</a>
+          <a class="promo-section__link global-link"  href="programms.html">Подобрать программу</a>
         </div>
       </section>
       <section class="main__section guide-section">
@@ -127,7 +127,7 @@
               <p class="guide-section__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
                 Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
-              <a class="guide-section__item-link global-link"  href="#">
+              <a class="guide-section__item-link global-link"  href="catalog-slim.html">
                 каталог Slim
                 <span class="guide-section__item-link-icon"></span>
               </a>
@@ -142,7 +142,7 @@
               <p class="guide-section__item-text">Заработать авторитет среди дворовых котов и даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="guide-section__item-link global-link"  href="#">
+              <a class="guide-section__item-link global-link"  href="catalog-pro.html">
                 каталог pro
                 <span class="guide-section__item-link-icon"></span>
               </a>
@@ -208,7 +208,7 @@
             </div>
           </div>
           <div class="example-section__slider slider">
-            <div class="slider__slide img-left" id="left-img">
+            <div class="slider__slide slider__slide--img-left" id="left-img">
               <picture>
                 <source
                   width="560"
@@ -225,7 +225,7 @@
                   height="256">
               </picture>
             </div>
-            <div class="slider__slide img-right" id="right-img">
+            <div class="slider__slide slider__slide--img-right" id="right-img">
               <picture>
                 <source
                   width="560"
@@ -250,29 +250,27 @@
         </div>
       </section>
       <section class="main__section contacts">
-        <div class="contacts__container inner-container">
-          <h2 class="contacts__title visually-hidden">Контакты</h2>
-          <div class="contacts__wrapper">
-            <div class="contacts__box">
-              <p class="contacts__description">Приглашаем<br> к сотрудничеству дилеров!</p>
-              <address class="contacts__address">
-                <span class="contacts__address-text">ул. Большая Конюшенная, д. 19/8</span>
-                <span class="contacts__address-text">Санкт-Петербург</span>
-              </address>
-            </div>
+        <h2 class="contacts__title visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__box">
+            <p class="contacts__description">Приглашаем<br> к сотрудничеству дилеров!</p>
+            <address class="contacts__address">
+              <span class="contacts__address-text">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="contacts__address-text">Санкт-Петербург</span>
+            </address>
           </div>
-          <div class="contacts__map">
-            <iframe
-              class="contacts__map-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428382363!2d30.32050301328321!3d59.938796861982276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sgr!4v1782477172951!5m2!1sru!2sgr"
-              width="320"
-              height="362"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
-            </iframe>
-          </div>
+        </div>
+        <div class="contacts__map-wrapper">
+          <iframe
+            class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428382363!2d30.32050301328321!3d59.938796861982276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sgr!4v1782477172951!5m2!1sru!2sgr"
+            width="320"
+            height="362"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+          </iframe>
         </div>
       </section>
     </main>
