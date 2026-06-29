@@ -13,8 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-self: flex-end;
     bottom: 85px;
-    margin-left: auto;
     margin-right: 110px;
   }
 }

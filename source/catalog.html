@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -67,7 +69,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="header__navigation header__navigation--closed header__navigation--nojs">
+        <nav class="header__navigation header__navigation--nojs">
           <ul class="header__navigation-list global-list">
             <li class="header__navigation-item">
               <a class="header__navigation-link header__navigation-link--catalog-link global-link"  href="index.html">Главная</a>
@@ -94,6 +96,17 @@
               <div class="card__wrapper">
                 <a class="card__img-link" href="catalog-product-description.html">
                   <picture>
+                    <source
+                      width="161"
+                      height="172"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="images/catalog/can-orange500-tablet-catalog@1x.webp 1x, images/catalog/can-orange500-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="68"
+                      height="86"
+                      type="image/webp"
+                      srcset="images/catalog/can-orange500-mobile-catalog@1x.webp 1x, images/catalog/can-orange500-mobile-catalog@2x.webp 2x">
                     <source
                       width="161"
                       height="172"
@@ -138,6 +151,23 @@
                     <source
                       width="172"
                       height="196"
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="images/catalog/can-orange1000-tablet-catalog@1x.webp 1x, images/catalog/can-orange1000-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="168"
+                      height="206"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="images/catalog/can-orange1000-tablet-catalog@1x.webp 1x, images/catalog/can-orange1000-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="84"
+                      height="100"
+                      type="image/webp"
+                      srcset="images/catalog/can-orange1000-mobile-catalog@1x.webp 1x, images/catalog/can-orange1000-mobile-catalog@2x.webp 2x">
+                    <source
+                      width="172"
+                      height="196"
                       type="image/png"
                       media="(min-width: 1440px)"
                       srcset="images/catalog/can-orange1000-tablet-catalog@1x.png 1x, images/catalog/can-orange1000-tablet-catalog@2x.png 2x">
@@ -151,7 +181,7 @@
                       class="card__img"
                       src="images/catalog/can-orange1000-mobile-catalog@1x.png"
                       srcset="images/catalog/can-orange1000-mobile-catalog@2x.png"
-                      alt="Еда Cat Energy PRO 500 г с курицей"
+                      alt="Еда Cat Energy PRO 1000 г с курицей"
                       width="84"
                       height="100">
                   </picture>
@@ -182,6 +212,17 @@
               <div class="card__wrapper">
                 <a class="card__img-link" href="catalog-product-description.html">
                   <picture>
+                    <source
+                      width="163"
+                      height="174"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="images/catalog/can-green500-tablet-catalog@1x.webp 1x, images/catalog/can-green500-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="84"
+                      height="100"
+                      type="image/webp"
+                      srcset="images/catalog/can-green500-mobile-catalog@1x.webp 1x, images/catalog/can-green500-mobile-catalog@2x.webp 2x">
                     <source
                       width="163"
                       height="174"
@@ -223,6 +264,23 @@
               <div class="card__wrapper">
                 <a class="card__img-link" href="catalog-product-description.html">
                   <picture>
+                    <source
+                      width="172"
+                      height="196"
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="images/catalog/can-green1000-tablet-catalog@1x.webp 1x, images/catalog/can-green1000-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="168"
+                      height="206"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="images/catalog/can-green1000-tablet-catalog@1x.webp 1x, images/catalog/can-green1000-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="84"
+                      height="100"
+                      type="image/webp"
+                      srcset="images/catalog/can-green1000-mobile-catalog@1x.webp 1x, images/catalog/can-green1000-mobile-catalog@2x.webp 2x">
                     <source
                       width="172"
                       height="196"
@@ -273,6 +331,17 @@
                     <source
                       width="161"
                       height="171"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="images/catalog/can-blue500-tablet-catalog@1x.webp 1x, images/catalog/can-blue500-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="68"
+                      height="78"
+                      type="image/webp"
+                      srcset="images/catalog/can-blue500-mobile-catalog@1x.webp 1x, images/catalog/can-blue500-mobile-catalog@2x.webp 2x">
+                    <source
+                      width="161"
+                      height="171"
                       type="image/png"
                       media="(min-width: 768px)"
                       srcset="images/catalog/can-blue500-tablet-catalog@1x.png 1x, images/catalog/can-blue500-tablet-catalog@2x.png 2x">
@@ -311,6 +380,23 @@
               <div class="card__wrapper">
                 <a class="card__img-link" href="catalog-product-description.html">
                   <picture>
+                    <source
+                      width="172"
+                      height="196"
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="images/catalog/can-blue1000-tablet-catalog@1x.webp 1x, images/catalog/can-blue1000-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="168"
+                      height="200"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="images/catalog/can-blue1000-tablet-catalog@1x.webp 1x, images/catalog/can-blue1000-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="84"
+                      height="100"
+                      type="image/webp"
+                      srcset="images/catalog/can-blue1000-mobile-catalog@1x.webp 1x, images/catalog/can-blue1000-mobile-catalog@2x.webp 2x">
                     <source
                       width="172"
                       height="196"
@@ -358,6 +444,17 @@
               <div class="card__wrapper">
                 <a class="card__img-link" href="catalog-product-description.html">
                   <picture>
+                    <source
+                      width="163"
+                      height="174"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="images/catalog/can-violet500-tablet-catalog@1x.webp 1x, images/catalog/can-violet500-tablet-catalog@2x.webp 2x">
+                    <source
+                      width="68"
+                      height="84"
+                      type="image/webp"
+                      srcset="images/catalog/can-violet500-mobile-catalog@1x.webp 1x, images/catalog/can-violet500-mobile-catalog@2x.webp 2x">
                     <source
                       width="163"
                       height="174"

@@ -5,6 +5,11 @@
 @import "./common/global.scss";
 
 /* BLOCKS */
+@import "./blocks/inner-container.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/global-link.scss";
+@import "./blocks/global-list.scss";
+@import "./blocks/global-button.scss";
 @import "./blocks/header.scss";
 @import "./blocks/main/main.scss";
 @import "./blocks/main/index/promo-section.scss";

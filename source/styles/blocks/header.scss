@@ -49,6 +49,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-right: 540px;
   }
 
   &:hover {
@@ -93,10 +99,6 @@
 }
 
 .header__navigation {
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-  }
-
   &--closed {
     display: none;
 
@@ -107,6 +109,9 @@
 
   &--opened {
     display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
   }
 
   &--nojs {
@@ -205,6 +210,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 33px;
   }
 
@@ -223,6 +229,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    width: auto;
     border-bottom: none;
     white-space: nowrap;
   }

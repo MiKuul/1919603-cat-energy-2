@@ -34,6 +34,8 @@
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1440px;
   }
 }
@@ -53,6 +55,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 26px 110px;
+    width: 100%;
   }
 }
 

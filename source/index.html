@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
     <script src="scripts/slider.js" defer></script>
@@ -68,7 +70,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="header__navigation header__navigation--closed header__navigation--nojs">
+        <nav class="header__navigation header__navigation--nojs">
           <ul class="header__navigation-list global-list">
             <li class="header__navigation-item">
               <a class="header__navigation-link header__navigation-link--active global-link"  href="index.html">Главная</a>
@@ -90,6 +92,23 @@
           <h1 class="promo-section__head-title">Функциональное питание для котов</h1>
           <p class="promo-section__text">Занялся собой? Займись котом!</p>
           <picture>
+            <source
+              width="552"
+              height="499"
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="images/index/can-desktop-index@1x.webp 1x, images/index/can-desktop-index@2x.webp 2x">
+            <source
+              width="709"
+              height="609"
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="images/index/can-tablet-index@1x.webp 1x, images/index/can-tablet-index@2x.webp 2x">
+            <source
+              width="280"
+              height="270"
+              type="image/webp"
+              srcset="images/index/can-mobile-index@1x.webp 1x, images/index/can-mobile-index@2x.webp 2x">
             <source
               width="552"
               height="499"
@@ -213,6 +232,17 @@
                 <source
                   width="560"
                   height="512"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="images/index/slider-before-tablet@1x.webp 1x, images/index/slider-before-tablet@2x.webp 2x">
+                <source
+                  width="280"
+                  height="256"
+                  type="image/webp"
+                  srcset="images/index/slider-before-mobile@1x.webp 1x, images/index/slider-before-mobile@2x.webp 2x">
+                <source
+                  width="560"
+                  height="512"
                   type="image/png"
                   media="(min-width: 768px)"
                   srcset="images/index/slider-before-tablet@1x.png 1x, images/index/slider-before-tablet@2x.png 2x">
@@ -227,6 +257,17 @@
             </div>
             <div class="slider__slide slider__slide--img-right" id="right-img">
               <picture>
+                <source
+                  width="560"
+                  height="512"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="images/index/slider-after-tablet@1x.webp 1x, images/index/slider-after-tablet@2x.webp 2x">
+                <source
+                  width="280"
+                  height="256"
+                  type="image/webp"
+                  srcset="images/index/slider-after-mobile@1x.webp 1x, images/index/slider-after-mobile@2x.webp 2x">
                 <source
                   width="560"
                   height="512"

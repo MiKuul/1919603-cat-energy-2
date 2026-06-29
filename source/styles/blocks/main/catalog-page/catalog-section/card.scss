@@ -143,6 +143,14 @@
     max-width: 169px;
     min-height: 210px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__title {
@@ -166,6 +174,14 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 24px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
